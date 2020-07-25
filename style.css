@@ -68,6 +68,12 @@ main {
 
 .location .date{
     color: #FFF;
+    font-size: 16px;
+    
+}
+
+.current .temp {
+    color: #FFF;
     font-size: 102px;
     font-weight: 900;
     margin:30px 0px;
@@ -75,7 +81,8 @@ main {
 }
 
 .current .temp span {
-    font-weight: 500;
+    font-weight:500;
+
     }
 
     .current .weather {
