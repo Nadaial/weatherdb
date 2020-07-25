@@ -8,7 +8,7 @@ searchbox.addEventListener('keypress', setQuery);
 
 
 function setQuery(event) {
-    if (event.keycode== 13){
+    if (event.keyCode == 13){
     getResults(searchbox.value);
     console.log(searchbox.value);
 }
@@ -25,4 +25,16 @@ function getResults(query){
 
 function displayResults(weather){
     console.log(weather);
+    let city=document.querySelector('.location.city');
+    city.innerText = `${weather.name}, ${weather.sys.country}`;
+
+    var now = new Date();
+    var date =document.querySelector('location.date');
+    date.innerText=dateBuilder(now);
+}
+
+
+
+function dateBuilder (d){
+    
 }
